@@ -1,0 +1,21 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	width:100%;
+	margin:10px auto;
+	background:yellowgreen;
+}
+li{
+	width:50%;
+	list-style: none;
+	color:red;
+	float: left;
+	margin:20px;
+	background:green;
+	border:1px solid #58bc58;
+}
+a{
+	text-decoration:none;
+}
