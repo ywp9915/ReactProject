@@ -3,15 +3,6 @@ import ReactDOM from 'react-dom';
 import "./css/index.css";
 
 
-// function Clock(props){
-// 	return(
-// 		<div>
-// 			<h3>hi!world</h3>
-// 			<p>now time is{new Date().toLocaleDateString()}.</p>
-// 		</div>
-// 	);
-// }
-
 class Clock extends React.Component{
 	render() {
 		return(
