@@ -3,19 +3,25 @@
 	padding:0;
 }
 ul{
-	width:100%;
+	width:180px;
+	height:50px;
 	margin:10px auto;
 	background:yellowgreen;
 }
 li{
-	width:50%;
+
 	list-style: none;
 	color:red;
 	float: left;
-	margin:20px;
-	background:green;
-	border:1px solid #58bc58;
 }
 a{
 	text-decoration:none;
+}
+body{
+	width:100%;
+}
+h5{
+	color:rgb(253, 247, 247);
+	width: 190px;
+	background:rgb(187, 146, 146);
 }

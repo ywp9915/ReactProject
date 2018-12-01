@@ -14,8 +14,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./css/index.css";
+const element=<h2>hello world!</h2>
 ReactDOM.render(
-	<h1>你好!</h1>,
+	element,
 	document.getElementById('app')
 );
 
