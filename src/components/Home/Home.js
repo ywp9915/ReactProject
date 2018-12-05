@@ -21,7 +21,7 @@ class Home extends Component{
     }
 
     componentWillMount(){
-        // https://www.iyemao.cc/wap.php?c=Shop&a=ajax_index
+      
         axios.get("/api/wap.php?c=Shop&a=ajax_index")
     }
     render(){
