@@ -1,0 +1,60 @@
+   @import './common.scss';
+.login{
+    // margin:0.93rem auto ;
+
+#login-form{
+   margin:0 auto;
+   width:80%;
+    div{
+        background:#fff;
+        width:300px;
+        height:121px ;
+            input{
+                width:90%;
+                text-align:left;
+                height:60px;
+                line-height:60px;
+                font-size:16px;
+                border:none;
+                margin-left:10px;
+            }
+            input::-webkit-input-placeholder {
+                color:#666;
+                font-size:20px;    
+            }
+            .usern{
+                border-bottom:1px solid rgba(151, 147, 133, 0.452);
+            }
+    
+    }
+    button{
+        border-radius: 5px;
+        width:300px;
+        height:50px;
+        color:#fff;
+        margin-top:20px;
+        text-align:center;
+        line-height: 50px;
+        font-size:22px;
+        outline: none;
+        border:none;
+        background:#FF658E;
+    }
+}
+ul{
+    margin:0 auto;
+    width:80%;
+    li{
+        margin-top:20px;
+        float:left;
+        color:#FF658E;
+        font-size:18px;
+        a{ 
+        color:#FF658E;
+        }
+    }
+    #forgetpwd{
+        float:right;
+    }
+}
+}

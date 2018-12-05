@@ -1,0 +1,73 @@
+@import './common.scss';
+#reg{
+    margin:70px auto ;
+
+#reg-form{
+   margin:0 auto;
+   width:99%;
+    div{
+        background:#fff;
+        width:350px;
+        height:180px ;
+        margin:0 auto;
+        border:1px solid rgba(151, 147, 133, 0.452);
+        display: felx;
+        flex-direction: column;
+        justify-content: space-between;
+            input{
+                width:100%;
+                flex:1;
+                text-align:left;
+                height:60px;
+                line-height:60px;
+                font-size:16px;
+                border:none;
+                padding:10px 0 10px 10px;
+                box-sizing: border-box;
+            }
+            input::-webkit-input-placeholder {
+                color:#666;
+                font-size:20px;    
+            }
+            input:focus{
+                background:#eee;
+                border-radius: 5px;
+            }
+            .usern,.pwd{
+                border-bottom:1px solid rgba(151, 147, 133, 0.452);
+            }
+    
+    }
+    button{
+        border-radius: 5px;
+        width:350px;
+        height:50px;
+        margin-left:10px;
+        color:#fff;
+        margin-top:30px;
+        text-align:center;
+        line-height: 50px;
+        font-size:22px;
+        outline: none;
+        border:none;
+        background:#FF658E;
+    }
+}
+ul{
+   
+    width:90%;
+    margin:0 auto;
+    li{
+        margin-top:20px;
+        float:left;
+        color:#FF658E;
+        font-size:16px;
+        span{ 
+        color:#FF658E;
+        }
+    }
+    #nowlogin{
+        float:right;
+    }
+}
+}

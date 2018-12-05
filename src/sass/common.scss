@@ -1,0 +1,26 @@
+html,body{height:100%
+}
+@function rem($px) {
+    @return $px/37.5 + rem
+}
+*{
+    margin:0;
+    padding:0;
+}
+ul,li,dl,dd{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+#root,.container{@extend body;position: relative;}
+.container{
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    display:flex;flex-direction: column;
+}
+.container>.content{flex:1;overflow-y:auto;}
+.container>.am-tab-bar{height:rem(50);}
