@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 
 import {Switch,Route} from 'react-router-dom';
 import axios from "axios";
-import { Carousel,Grid } from 'antd-mobile';
+import { Grid } from 'antd-mobile';
 import "../../sass/takeout.scss"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

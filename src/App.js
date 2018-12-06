@@ -87,7 +87,7 @@ class App extends Component {
       <div className="container">
         <div className="content">
           <Switch>
-            {/* <Route path="{/Home}" exact component={Home} /> */}
+            <Route path="/Home" component={Home} />
             <Route path="/Takeout" component={Takeout} />
             <Route path="/Run" component={Run} />
             <Route path="/Register" component={Register}/>
@@ -98,7 +98,7 @@ class App extends Component {
           </Switch>
         </div>
         <TabBar
-            tintColor="#06c1ae"
+            tintColor="#FF658E"
             noRenderContent={true}
             hidden={!this.props.tabbarStatus}
             >
