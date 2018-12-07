@@ -1,5 +1,4 @@
 let initState = {
-    // 是否显示底部tab菜单
     tabbarStatus:true
 }
 let commonReducer = (state=initState,action)=>{

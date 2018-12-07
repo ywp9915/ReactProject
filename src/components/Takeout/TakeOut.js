@@ -3,6 +3,7 @@ import React,{Component} from 'react';
 import {Switch,Route} from 'react-router-dom';
 import axios from "axios";
 import { Grid } from 'antd-mobile';
+import 'antd-mobile/dist/antd-mobile.css';
 import "../../sass/takeout.scss"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,18 +20,18 @@ library.add(
 )
 const data1 = Array.from(new Array(10)).map((_val, i) => ({
     icon: 'https://www.iyemao.cc/wap.php?c=Shop&a=ajax_index',
-    text: "run",
+    text: "run"
   }));
 function Header (){
     return <div className="header">
-            <span>
-                <span><i className="far fa-dot-circle"></i></span>
-                <span>合浦</span>
-                <i className="far fa-chevron-right"></i>
-                
-                <i className="far fa-search"></i>
-            </span>
-        </div>
+        <span className="site" >
+            <FontAwesomeIcon icon="dot-circle" />
+            <span className="place">合浦</span>
+            <FontAwesomeIcon icon="chevron-right" />
+            <FontAwesomeIcon icon="search" />
+            
+        </span>
+    </div>
 }
 function Pictrue (){
     return <div className="top_pictrue">
@@ -77,28 +78,9 @@ class Takeout extends Component{
             banner:[],
             navlist:[]
         }
-        this.handlerClick = this.handlerClick.bind(this);
+        // this.handlerClick = this.handlerClick.bind(this);
     }
 
-    handlerClick(slider_list){
-        let {history}=this.props;
-       
-    }
-
-    componentWillMount(){
-        axios.get('api/wap.php?c=Shop&a=ajax_index',{
-			params:{
-				t:Date.now()
-			}
-		}).then(res=>{
-            let data = res.data;
-            console.log(data.banner_list);
-			this.setState({
-				banner:data.banner_list.slice(0,4),
-				navlist:data.slider_list.slice(4)
-			});
-		});
-    }
     render(){
         let {match} = this.props;
         return <div className="takeout">

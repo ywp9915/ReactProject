@@ -29,6 +29,7 @@ library.add(
     faUser,
     faRunning
 )
+
 axios.defaults.baseURL="http://localhost:3000";
 
 class App extends Component {
@@ -98,7 +99,7 @@ class App extends Component {
           </Switch>
         </div>
         <TabBar
-            tintColor="#FF658E"
+            tintColor="#06c1ae"
             noRenderContent={true}
             hidden={!this.props.tabbarStatus}
             >
@@ -126,7 +127,6 @@ class App extends Component {
 let mapStateToProps = state=>{
     console.log(state);
     return {
-        //把state.commonReducer.tabbarStatus映射到props
         tabbarStatus:state.commonReducer.tabbarStatus,
         cartQty:state.cartReducer.goodslist.length
     }

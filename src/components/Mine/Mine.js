@@ -38,16 +38,16 @@ class Mine extends Component{
            action="/wap.php?g=Wap&amp;c=Login&amp;a=index" location_url="/wap.php?g=Wap&amp;c=My&amp;a=index">
                 <div className="login-info">    
                     <input type="text" className="usern" placeholder="请输入用户名" />
-                    <input type="text" placeholder="请输入您的密码" />
+                    <input type="password" placeholder="请输入您的密码" />
                 </div>
                 <button type="submit" className="btn-login">登录</button>
 			</form>
             <ul>
-                <Link to="/Register/" >
+          
                     <li id="reg">
                         立即注册
                     </li>
-                </Link>
+                
                 <li id="forgetpwd">
                     <a href="#">找回密码</a>
                 </li>
