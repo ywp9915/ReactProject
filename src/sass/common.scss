@@ -23,7 +23,7 @@ a{
     display:flex;flex-direction: column;
 }
 .container>.content{flex:1;overflow-y:auto;}
-.container>.am-tab-bar{height:50px;z-index: 19090; position: fixed;
+.container>.am-tab-bar{height:1.333rem;z-index: 19090; position: fixed;
     left:0;
     right:0;
     bottom:0;}

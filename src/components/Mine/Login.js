@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
 
-import {Switch,Route,Link} from 'react-router-dom';
+// import {Switch,Route,Link} from 'react-router-dom';
 
-import {Register} from "./Register";
+// import {Register} from "./Register";
 import "../../sass/login.scss";
 
-class Mine extends Component{
+class Login extends Component{
     constructor(){
         super();
         this.state = {
@@ -43,13 +43,12 @@ class Mine extends Component{
                 <button type="submit" className="btn-login">登录</button>
 			</form>
             <ul>
-          
-                    <li id="reg">
-                        立即注册
-                    </li>
-                
-                <li id="forgetpwd">
-                    <a href="#">找回密码</a>
+                <li className="reg">
+                    立即注册
+                </li>
+                <li className="forgetpwd">
+                找回密码
+                    {/* <a href="javascript:0"></a> */}
                 </li>
 
             </ul>
@@ -62,4 +61,4 @@ class Mine extends Component{
     }
 }
 
-export {Mine};
+export {Login};

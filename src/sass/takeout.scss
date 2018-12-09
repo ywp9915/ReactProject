@@ -7,29 +7,62 @@
         top:0;
         left:0;
         display: inline-block;
-        .size{
-            font-size:16px;
+        font-size:.42rem;
+        display: flex;
+        width:100%;
+        height:1.33rem;
+        line-height:1.33rem;
+        z-index:1000;
+        .site-icon{
+            flex:8;
             display: inline-block;
-            i{
-                display: inline-block;
-                width:20px;
-                height: 20px;
-                color:#555;
-
-            }
-            span{
-                display: inline-block;
-                color:#555;
-                background:rgb(230, 188, 188);
+            width:2rem;
+            height: 0.665rem;
+            color:#555;
+            border-radius: 0.45rem;
+            color:#fff;
+            text-align: center;
+            .site-search{
+                width:4.4rem;
+                background:rgba(0,0,0,0.2);
+                height: 0.8rem;
+                line-height: 0.4rem;
+                border-radius: 0.4rem;
+                margin:0.226rem auto;
+                span{
+                    display: inline-block;
+                    height: 0.8rem;
+                    line-height: 0.8rem;
+                    padding:0 1.2rem;
+                }
             }
         }
+        .header-right{
+            flex:1;
+            display: inline-block;
+            color:#fff;
+            margin:0.226rem auto;
+            .he-con{
+                width:0.8rem;
+                height: 0.8rem;
+                line-height: 0.4rem;
+                border-radius: 0.4rem;
+                background:rgba(0,0,0,0.2);
+                svg{
+                    path{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    
     }
     .top_pictrue{
         position: absolute;
-        top:50px;
+        top:0;
         left:0;
         width:100%;
-        height:140px;
+        height:3.733rem;
         img{
             width:100%;
             height:100%;
@@ -38,33 +71,20 @@
     .menu{
         // z-index: 10000;
         width:100%;
-        height:178px;
-        position: fixed;
-        top:190px;
+        height:4.747rem;
+        position: absolute;
+        top:3.733rem;
         left:0;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        Grid{
-            div{
-                width:25%;
-                img{
-                    width:75px;
-                    height:75px;
-                    
-                }
-                div{
-                    color:red;
-                    font-size:16px;
-                }
-            }
-        }
+       
     }
     .serve{
         width:100%;
-        height:180px;
+        height:4.8rem;
         position:absolute;
-        top:390px;
+        top:9rem;
         left:0;
         display: flex;
         justify-content: space-between;
@@ -72,36 +92,61 @@
             flex:1;
             border-right:1px solid #fff;
             img{
-                width:187.5px;
+                width:5rem;
                 // height:100%;
             }
         }
         .right{
             flex:1;
-            width:100%;
-            height:100%;
+            width:5rem;
+            height:4.8rem;
             display: flex;
-            justify-content: space-between;
+            justify-content: start;
             flex-direction: column;
-            .right-top{
+            .right-top,.right-bot{
                 flex:1;
-                height: 50%;
-                width:100%;
-                border-bottom: 1px solid #fff;
+                height: 2.4rem;
+                width:5rem;
                 img{
-                    width:100%;
+                    height: 2.4rem;
+                    width:5rem;
                     
                 }
             }
-            .right-bot{
-                flex:1;
-                height: 50%;
-                width:100%;
-                img{
-                    width:100%;
-                }
+            .right-top{
+                box-sizing: border-box;
+                border-bottom: 1px solid #fff;
             }
         }
 
+    }
+    .classify{
+        width:100%;
+        height:1.06rem;
+        position:absolute;
+        top:14rem;
+        left:0;
+        background:#fff;
+        margin-bottom:200px;
+        ul{
+            width:100%;
+            height:100%;
+            display: felx;
+            justify-content: space-between;
+            li{
+                flex:1;
+                width:33%;
+                height:.7rem;
+                display: inline-block;
+                color:#444;
+                font-size:.373rem;
+                margin-top:.18rem;
+                text-align: center;
+                line-height:.7rem;
+                vertical-align: middle;
+                border-right:.026rem solid rgba(0,0,0,0.1);
+            }
+
+        }
     }
 }

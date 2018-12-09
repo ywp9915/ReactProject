@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
 import axios from "axios";
-import {Switch,Route} from 'react-router-dom';
-import { Carousel,SearchBar,Grid ,PullToRefresh } from 'antd-mobile';
+// import {Switch,Route} from 'react-router-dom';
+import { Carousel,SearchBar,Grid  } from 'antd-mobile';
 // import Computer from './Computer';
-
+// ,PullToRefresh
 import "../../sass/home.scss";
-
+// import '../../../node_modules/antd/dist/antd.min.css'
 
 const data1 = Array.from(new Array(13)).map((_val, i) => (
     // {
@@ -65,11 +65,12 @@ const data2 = Array.from(new Array(7)).map((_val, i) => (
     {
         icon: 'https://www.iyemao.cc/upload/slider/000/000/001/5bbc665ba7a6a333.png',
         text: "二手交易"
-    },
-    {
-        icon: 'https://www.iyemao.cc/upload/slider/000/000/001/5bbc6648c3590271.png',
-        text: "二手交易"
     }
+    // ,
+    // {
+    //     icon: 'https://www.iyemao.cc/upload/slider/000/000/001/5bbc6648c3590271.png',
+    //     text: "二手交易"
+    // }
     // ,
     // {
     //     icon: 'https://www.iyemao.cc/upload/slider/000/000/001/5bbc665ba7a6a333.png',
@@ -141,7 +142,6 @@ function News(){
         </div>
     </div>
 }
-
 function Serve(){
     return <div className="serve">
             <div className="left">
@@ -225,11 +225,12 @@ class Home extends Component{
                     >
                     {this.state.banner.map(banner => (
                         <a
-                        href="#"
+                        href="http://baidu.com"
                         style={{height:'320px'}}
                         key={banner.imgsrc}>
                             <img
-                                src={banner.imgsrc}
+                                src={banner.imgsrc} 
+                                alt=""
                                 style={{ width: '100%', height:'140px', verticalAlign: 'top' }}
                                 onLoad={() => {
                                     window.dispatchEvent(new Event('resize'));

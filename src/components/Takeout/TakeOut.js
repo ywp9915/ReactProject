@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 
-import {Switch,Route} from 'react-router-dom';
-import axios from "axios";
+// import {Switch,Route} from 'react-router-dom';
+// import axios from "axios";
 import { Grid } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css';
 import "../../sass/takeout.scss"
@@ -24,18 +24,23 @@ const data1 = Array.from(new Array(10)).map((_val, i) => ({
   }));
 function Header (){
     return <div className="header">
-        <span className="site" >
-            <FontAwesomeIcon icon="dot-circle" />
-            <span className="place">合浦</span>
-            <FontAwesomeIcon icon="chevron-right" />
-            <FontAwesomeIcon icon="search" />
-            
-        </span>
+            <div className="site-icon">
+                <div className="site-search">
+                    <FontAwesomeIcon icon="dot-circle" />
+                    <span className="place">合浦</span>
+                    <FontAwesomeIcon icon="chevron-right" />
+                </div>
+            </div>
+            <div className="header-right">
+                <div className="he-con">
+                <FontAwesomeIcon icon="search" />
+                </div>
+            </div>
     </div>
 }
 function Pictrue (){
     return <div className="top_pictrue">
-    <img src="https://www.iyemao.cc/upload/adver/000/000/001/5c04e3d2a49e7169.jpg"/>
+    <img src="https://www.iyemao.cc/upload/adver/000/000/001/5c04e3d2a49e7169.jpg" alt="" />
     </div>
 }
 function Menu(){
@@ -71,6 +76,21 @@ function Serve(){
             </div>
         </div>
 }
+function Classify (){
+    return <div className="classify">
+        <ul>
+            <li className="category">
+                <span className="nav-head-name">店铺分类 ∨</span>
+            </li>
+            <li className="sort">
+                <span className="nav-head-name">智能排序 ∨</span>
+            </li>
+            <li className="type">
+                <span classn="nav-head-name">类  型   ∨</span>
+            </li>
+        </ul>
+    </div>
+}
 class Takeout extends Component{
     constructor(){
         super();
@@ -82,12 +102,13 @@ class Takeout extends Component{
     }
 
     render(){
-        let {match} = this.props;
+        // let {match} = this.props;
         return <div className="takeout">
             <Header/>
             <Pictrue/>
             <Menu/>
             <Serve/>
+            <Classify/>
         </div>
     }
 }

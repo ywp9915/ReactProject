@@ -12,7 +12,8 @@ import './sass/common.scss';
 
 import {Home} from './components/Home/Home';
 import {Run} from './components/Run/Run';
-import {Register} from './components/Mine/Register';
+// import {Register} from './components/Mine/Register';
+import {Login} from "./components/Mine/Login";
 import {Takeout} from './components/Takeout/TakeOut';
 import {NotFound} from './components/Page';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -54,7 +55,7 @@ class App extends Component {
             },
             {
                 title:'我的',
-                path:'/Register',
+                path:'/Login',
                 icon:'user'
             }
         ],
@@ -91,8 +92,8 @@ class App extends Component {
             <Route path="/Home" component={Home} />
             <Route path="/Takeout" component={Takeout} />
             <Route path="/Run" component={Run} />
-            <Route path="/Register" component={Register}/>
-            {/* <Route path="/Mine" component={Mine} /> */}
+            {/* <Route path="/Register" component={Register}/> */}
+            <Route path="/Login" component={Login} />
             <Route path="/404" component={NotFound} />
             <Redirect from="/" to="/Home" exact/>
             <Redirect to="/404"/>

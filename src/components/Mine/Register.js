@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 
-import {Switch,Route,Link} from 'react-router-dom';
-import {Mine} from "./Mine"
+// import {Switch,Route,Link} from 'react-router-dom';
+// import {Mine} from "./Mine"
 import "../../sass/reg.scss"
 class Register extends Component{
     constructor(){

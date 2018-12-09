@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 
-import {Switch,Route} from 'react-router-dom';
+// import {Switch,Route} from 'react-router-dom';
 
 import "../../sass/run.scss";
 
@@ -24,14 +24,14 @@ class Run extends Component{
         console.log('List:',this.props)
     }
     render(){
-        let {match} = this.props;
+        // let {match} = this.props;
         return <div className="run">
         <div className="guild">
             <div className="line-title">
                 <span className="line-txt">- 一键发布需求，服务快捷方便！-</span>
             </div>
             <div className="guild-content">
-                <img src="https://www.iyemao.cc/tpl/Wap/default/static/service/images/step_title_img3.png"/>
+                <img src="https://www.iyemao.cc/tpl/Wap/default/static/service/images/step_title_img3.png" alt=""/>
             </div>
         </div>
         <div className="operate">
@@ -55,7 +55,7 @@ class Run extends Component{
                     </span>
                 </div>
                 <div className="title-right">
-                    <a className="publish" href="">
+                    <a className="publish" href="http://baidu.com">
                         <i className="ico ico-edit"></i>
                             发布
                     </a>
@@ -63,9 +63,9 @@ class Run extends Component{
             </div>
             <div className="seo-con">
                 <div className="seo-menu">
-                    <a href="">帮我买</a>
-                    <a href="">帮我送</a>
-                    <a href="">帮我取</a>
+                    <a href="http://baidu.com">帮我买</a>
+                    <a href="http://baidu.com">帮我送</a>
+                    <a href="http://baidu.com">帮我取</a>
                 </div>
             </div>
         </div>
