@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 
-// import {Switch,Route,Link} from 'react-router-dom';
-// import {Mine} from "./Mine"
+import {Switch,Route,Link} from 'react-router-dom';
+import {Login} from "./Login"
 import "../../sass/reg.scss"
 class Register extends Component{
     constructor(){
@@ -11,7 +11,7 @@ class Register extends Component{
             pwd:"",
             login:[
                 {
-                    pathname:"/Mine"
+                    pathname:"/Login"
                 }
             ]
         }
@@ -38,7 +38,9 @@ class Register extends Component{
                 }}/>
                 </div>
                 <button type="submit" className="btn-login" onClick={()=>{
-                alert(this.state.user_name+":"+this.state.user_pwd);
+                // alert(this.state.name+":"+this.state.pwd);
+                console.log(999);
+                // this.props.history.push("/Login");
             }} >注册</button>
 			</form>
             <ul>
@@ -46,10 +48,9 @@ class Register extends Component{
                     <input type="checkbox" />
                     我已阅读并同意<span>《注册协议》</span>
                 </li>
-                <li id="nowlogin" onClick={()=>{
-                    this.props.history.push("/Mine");
-                }} >
-                立即登录
+                <li id="nowlogin">
+                <Link to={Login}> 立即登录</Link>
+               
                 </li>
             </ul>
         </div>

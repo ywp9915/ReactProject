@@ -28,18 +28,24 @@ var options = {
   // }
 }
 var exampleProxy = proxy(options)
-
 app.use('/api', exampleProxy)
 app.use("^/api",proxy({
     target: 'https://www.iyemao.cc', // target host
     changeOrigin: true, // needed for virtual hosted sites
-    // ws: true,
-     // proxy websockets
     pathRewrite: {
     '^/api': '/', // rewrite path
-   
-  }
+    }
 }))
+
+// const userRouter = require('./user')
+// const bodyParser = require('body-parser')
+// const cookieParser = require('cookie-parser')
+// const app = express()
+// app.use(cookieParser())
+// app.use(bodyParser())
+// app.use('/user',userRouter)
+
+
 // app.listen(3003);
 app.listen(3000,function(){
     console.log("Server running on http://localhost:3000");

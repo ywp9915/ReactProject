@@ -16,6 +16,7 @@ import {Run} from './components/Run/Run';
 import {Login} from "./components/Mine/Login";
 import {Takeout} from './components/Takeout/TakeOut';
 import {NotFound} from './components/Page';
+// import {Search} from './components/Common/Search';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
@@ -80,7 +81,7 @@ class App extends Component {
       this.setState({
           currentTab
       });
-      console.log('app props:',this.props)
+    //   console.log('app props:',this.props)
   }
   
 
@@ -94,6 +95,7 @@ class App extends Component {
             <Route path="/Run" component={Run} />
             {/* <Route path="/Register" component={Register}/> */}
             <Route path="/Login" component={Login} />
+            {/* <Route path="Search" component={Search} /> */}
             <Route path="/404" component={NotFound} />
             <Redirect from="/" to="/Home" exact/>
             <Redirect to="/404"/>
@@ -126,7 +128,7 @@ class App extends Component {
 }
 
 let mapStateToProps = state=>{
-    console.log(state);
+    // console.log(state);
     return {
         tabbarStatus:state.commonReducer.tabbarStatus,
         cartQty:state.cartReducer.goodslist.length

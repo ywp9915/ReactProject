@@ -51,7 +51,7 @@
                 width:40%;
                 height: 1.87rem;
                 line-height:1.87rem;
-                font-size:.533rem;
+                font-size:.6rem;
                 margin:1.07rem .533rem .267rem .533rem;
                 color:#fff;
                 text-align: center;
@@ -83,10 +83,11 @@
             border-bottom: #ccc;
             font-weight: 600;
             .title-con{
+                margin:.27rem .4rem;
                 flex:1;
                 span{
                     color:#06c1ae;
-                    margin:.533rem .8rem;
+                    // margin:.27rem .8rem;
                     text-align: center;
                     font-size:.533rem;
                     
@@ -94,7 +95,7 @@
             }
             .title-right{
                 height:1.813rem;
-                margin:.27rem .27rem;
+                margin:.27rem 1.3rem;
                 a{
                     text-align: center;
                     font-size:.48rem;

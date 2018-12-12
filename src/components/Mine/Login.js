@@ -1,20 +1,20 @@
 import React,{Component} from 'react';
 
-// import {Switch,Route,Link} from 'react-router-dom';
+import {Switch,Route,Link} from 'react-router-dom';
 
-// import {Register} from "./Register";
+import {Register} from "./Register";
 import "../../sass/login.scss";
 
 class Login extends Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
-           login:[
-               {
-                   font:"立即注册",
-                   path:"./Register"
-               }
-           ]
+        //    login:[
+        //        {
+        //            font:"立即注册",
+        //            path:"./Register"
+        //        }
+        //    ]
         }
         this.handlerClick = this.handlerClick.bind(this);
     }
@@ -43,19 +43,22 @@ class Login extends Component{
                 <button type="submit" className="btn-login">登录</button>
 			</form>
             <ul>
-                <li className="reg">
+                <li className="reg" onClick={()=>{
+                
+                this.props.history.push("/Register");}}>
                     立即注册
                 </li>
                 <li className="forgetpwd">
-                找回密码
-                    {/* <a href="javascript:0"></a> */}
-                </li>
 
+                    <a href="">找回密码</a>
+                    
+                    
+                </li>
             </ul>
-            {/* <Switch>
+            <Switch>
                 <Route path="{/Register}" component={Register} />
                 
-            </Switch> */}
+            </Switch>
 
         </div>
     }

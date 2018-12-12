@@ -1,0 +1,26 @@
+@import './common.scss';
+.search{
+    background:#b2b2b2;
+    position: relative;
+    .searchbox{
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+        background:#fff;
+        width: 100%;
+        height:1.33rem;
+        input{
+            display: block;
+            line-height:1.03rem;
+            width: 9.6rem;
+            height:1.03rem;
+            background:#fff;
+            border-radius: .1rem;
+            margin-left:.16rem;
+            border:1px solid #e1e1e1;
+        }
+
+    }
+
+}
